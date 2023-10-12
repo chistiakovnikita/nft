@@ -1,0 +1,86 @@
+.gallery {
+    &__title {
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        position: relative;
+        border: 1px solid rgba(197, 34, 228, 0.71);
+        padding: 24px 24px 40px 24px;
+        margin-bottom: 48px;
+    }
+
+    &__images {
+        max-width: 388px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 15px;
+        column-gap: 18px;
+        grid-template-areas:
+            'img1 img2'
+            'img1 img4'
+            'img1 img3';
+        margin-bottom: 24px;
+    }
+
+    &__img {
+        border-radius: 5px;
+    }
+
+    &__img1 {
+        grid-area: img1;
+    }
+
+    &__img2 {
+        grid-area: img2;
+    }
+
+    &__img3 {
+        grid-area: img3;
+    }
+
+    &__img4 {
+        grid-area: img4;
+    }
+
+    &__block-title {
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    &__block-subtitle {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        color: $text;
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 50px;
+        right: 24px;
+    }
+
+    &__button {
+        padding: 16px 32px 16px 32px;
+        border-radius: 4px;
+        color: $text;
+        background: linear-gradient(
+            107.64deg,
+            rgba(200, 34, 228, 0.3) 19.89%,
+            rgba(87, 25, 244, 0.3) 89.77%
+        );
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}

@@ -1,0 +1,22 @@
+@import './variables';
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text {
+    color: $text;
+    line-height: 24px;
+}
+
+section {
+    margin-bottom: 148px;
+}
+
+.title {
+    font-family: Ruda;
+    font-size: 48px;
+    font-weight: 700;
+}

@@ -1,0 +1,44 @@
+.create {
+    text-align: center;
+    &__title {
+        margin-bottom: 104px;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        background: rgba(33, 21, 56, 1);
+        border-radius: 8px;
+    }
+
+    &__block {
+        max-width: 337px;
+        padding: 48px 41px;
+        cursor: pointer;
+        transition: transform 0.3s linear;
+
+        &:hover {
+            border: 2px solid rgba(197, 34, 228, 0.3);
+            border-radius: 8px;
+            transform: translateY(-50px);
+            background: linear-gradient(0deg, #301c49, #301c49),
+                linear-gradient(
+                    134.83deg,
+                    rgba(197, 34, 228, 0.3) 0%,
+                    rgba(90, 25, 244, 0.3) 96.35%
+                );
+            padding: 44px 39px;
+        }
+    }
+
+    &__block-img {
+        margin-bottom: 24px;
+    }
+
+    &__block-title {
+        margin-bottom: 16px;
+        color: $white;
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
