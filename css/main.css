@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -749,6 +750,10 @@ section {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
+  transition: opacity 0.3s linear;
+}
+.gallery__button:hover {
+  opacity: 0.8;
 }
 
 .seller {
@@ -814,6 +819,10 @@ section {
   text-align: center;
   margin-bottom: 56px;
 }
+.blog__inner {
+  display: flex;
+  justify-content: space-between;
+}
 .blog .block {
   border: 1px solid rgba(197, 34, 228, 0.65);
   max-width: 340px;
@@ -821,17 +830,112 @@ section {
 }
 .blog .block__img {
   border-radius: 6px;
+  margin-bottom: 17px;
 }
 .blog .block__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 24px;
 }
 .blog .block__admin {
   display: flex;
   align-items: center;
   gap: 14px;
 }
+.blog .block__title {
+  color: white;
+  margin-bottom: 16px;
+}
+.blog .block__text {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.blog .block__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog .block__button {
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(98.94deg, rgba(200, 34, 228, 0.4) 2.52%, rgba(87, 25, 244, 0.4) 92.81%);
+  border-radius: 4px;
+  transition: opacity 0.3s linear;
+}
+.blog .block__button:hover {
+  opacity: 0.8;
+}
+.blog .block__button--icon {
+  transition: opacity 0.3s linear;
+}
+.blog .block__button--icon:hover {
+  opacity: 0.8;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 78px;
+}
+.footer .nav-block__title {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.footer .nav-block__text {
+  margin-bottom: 32px;
+}
+.footer .nav-block__buttons {
+  display: flex;
+  gap: 20px;
+}
+.footer .nav-block__button {
+  padding: 11.33px;
+  border-radius: 4px;
+  background: linear-gradient(132.51deg, rgba(117, 114, 217, 0.6) 2.66%, rgba(185, 89, 198, 0.6) 74.47%, rgba(214, 47, 195, 0.6) 98.67%);
+  transition: opacity 0.3s linear;
+}
+.footer .nav-block__button:hover {
+  opacity: 0.8;
+}
+.footer .nav-block__item {
+  margin-bottom: 16px;
+}
+.footer .nav-block__link {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(215, 215, 215);
+  transition: opacity 0.3s linear;
+}
+.footer .nav-block__link:hover {
+  opacity: 0.8;
+}
+.footer .form {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+.footer .form__input {
+  width: 230px;
+  border: 0.6px solid rgb(215, 215, 215);
+  border-right: none;
+  background: none;
+  border-radius: 4px 0 0 4px;
+  padding: 13px 0 15px 16px;
+  outline: none;
+  color: rgb(215, 215, 215);
+}
+.footer .form__btn {
+  border: 0.6px solid rgb(234, 0, 173);
+  height: 100%;
+  border-radius: 4px;
+  padding: 12px;
+  margin-left: -3px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
